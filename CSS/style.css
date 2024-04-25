@@ -1,0 +1,201 @@
+@keyframes swordAttack
+{
+    from
+    {
+        transform: translateX(-300px);
+    }
+    to
+    {
+        transfor: translateX(0);
+    }
+}
+@keyframes steveAttacked
+{
+    from
+    {
+        transform: translateX(-5px);
+    }
+    to
+    {
+        transfor: translateX(0);
+    }
+}
+.submit-button
+{
+    color: white;
+    background: black;
+    border: 3px white solid;
+    padding: 25px 40px;
+}
+.submit-button:hover
+{
+    cursor: pointer;
+    background-color: rgb(34, 30, 30);
+}
+body
+{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(218, 180, 11);
+}
+h2
+{
+    color:rgb(158, 0, 231);
+    font-size: 3em;
+}
+input
+{
+    width: 1000px;
+    height: 50px;
+    background: rgb(103, 185, 86);
+}
+.images-div
+{
+    display:flex;
+    align-items: center;
+}
+.button
+{
+    color:white;
+    background-color: teal;
+    padding: 10px 500px;
+    border: 3px black solid;
+    border-radius: 5px;
+}
+.button:hover
+{
+    background-color: rgb(90, 143, 143);
+    cursor: pointer;
+}
+.heal-menu
+{
+    width: 400px;
+    height: 400px;
+    background: black;
+    border: gold 2px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 3px;
+    column-gap: 3px;
+}
+.shield
+{
+    width: 140px;
+    height: 140px;
+    background-image: url("./images/shield.jpg");
+    background-size: 140px 140px;
+}
+.shield:hover
+{
+    cursor: pointer;
+    border:rgb(103, 185, 86) solid 2px;
+
+}
+.shields
+{
+    width: 450px;
+    height: 150px;
+    background: cyan;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+}
+.food
+{
+    width: 120px;
+    height: 120px;
+    border: 2px solid white;
+    background-image: url("./images/burger.jpg");
+    background-size: 120px 130px;
+}
+.food:hover
+{
+    border: lightseagreen 3px solid;
+    cursor: pointer;
+    background-color: rgba(103, 236, 76, 0.281);
+}
+.fight-bar
+{
+    height: 200px;
+    width: 1000px;
+    background-color: black;
+    color: white;
+    border: white 1px solid;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.9fr 1.5fr;
+    grid-template-rows: 4fr 1fr 1.5fr;
+}
+.fight-info
+{
+    margin: 5px
+}
+.btn1
+{
+    background: red;
+}
+.btn1:hover
+{
+    background: maroon;
+}
+.btn2
+{
+    background: cyan;
+}
+.btn2:hover
+{
+    background: teal;
+}
+.btn3
+{
+    background: gold;
+}
+.btn3:hover
+{
+    background: yellow;
+}
+.btn4
+{
+    background: white;
+}
+.btn4:hover
+{
+    background: black;
+    color: white;
+}
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover
+{
+    cursor: pointer;
+}
+
+.btn1, .btn2, .btn3, .btn4
+{
+    border: white 3px solid;
+    margin: 5px;
+}
+.steve
+{
+    display: none;
+}
+.steve2
+{
+    display: all;
+}
+.steve3
+{
+    animation: steveAttacked 0.2s ease-in 1s 10 normal both;
+    display: all;
+}
+.sword
+{
+    display: none;
+}
+.sword2
+{
+    animation: swordAttack 3s ease-in;
+    display: all;
+    height: 60px;
+    width: 57px;
+}
