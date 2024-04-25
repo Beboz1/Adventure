@@ -8,8 +8,8 @@ class Player
         this.age = 10;
         this.health = health;
         this.weapon = "sword";
-        this.playerx = 540
-        this.playery = 40
+        this.playerx = 100
+        this.playery = 290
         this.playerw = 100
         this.playerh = 100
     }

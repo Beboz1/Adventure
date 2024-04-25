@@ -55,8 +55,8 @@
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 40px;
-    left: 540px;
+    top: 100px;
+    left: 290px;
 }
 #buttons-area{
     display: flex;

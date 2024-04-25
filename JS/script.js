@@ -43,10 +43,24 @@ stopBtn.addEventListener("click", stop);
 nextButton.setAttribute("class", "button");
 nextButton2.setAttribute("class", "button");
 playerAge.setAttribute("type", "number");
-
+    
+    
+        if(player1.weapon == "sword")
+    {
+        player.setAttribute("src", "./CSS/images/Character.png")
+    }
+    player.style.left = '100px'
+    player.style.top = '290px'
+    player1.playerx = 100
+    player1.playery = 290
+    cords.innerText = 'x = ' + player1.playerx + 'y = ' + player1.playery;
 
 window.addEventListener('keydown', (e) => {
-
+        if(player1.weapon == "sword")
+    {
+        player.setAttribute("src", "./CSS/images/Character.png")
+    }
+    
     switch (e.key)
     {
         case 'ArrowUp':
@@ -134,15 +148,31 @@ function wall4(){
         player.style.left = '68px'
     }
 }
+
+
+
+
+
+//room1
+    
+    let clay = document.querySelector(".clayx");
+
+
+
+
+
+
 function start()
 {
 
-player.style.left = '540px'
-player.style.top = '40px'
-player1.playerx = 540
-player1.playery = 40
+player.style.left = '100px'
+player.style.top = '290px'
+player1.playerx = 100
+player1.playery = 290
 cords.innerText = 'x = ' + player1.playerx + 'y = ' + player1.playery;
 
+    
+    clay.setAttribute("class", "clay")
     /*
     startBtn.removeEventListener("click", start);
     nextButton.addEventListener("click", removeChildren);
