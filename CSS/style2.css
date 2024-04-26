@@ -78,3 +78,15 @@
     color: #218477;
     display: all;
 }
+.dialog-box{
+    position: absolute;
+    top: 640px;
+    height: 60px;
+    width: 1096px;
+    background: #437890;
+    border: 2px solid black;
+    display: block;
+}
+.dialog-boxH{
+    display: none;
+}

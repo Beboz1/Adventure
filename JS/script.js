@@ -156,6 +156,13 @@ function wall4(){
 //room1
     
     let clay = document.querySelector(".clayx");
+    let clayX = 1000
+    let clayY = 310
+    clay.style.top = clayY + "px"
+    clay.style.left = clayX + "px"
+    let dialogBox = document.querySelector("#dialog-box")
+    dialogBox.setAttribute("class", "dialog-boxH")
+    let words = document.querySelector("#talking")
 
 
 
@@ -173,6 +180,61 @@ cords.innerText = 'x = ' + player1.playerx + 'y = ' + player1.playery;
 
     
     clay.setAttribute("class", "clay")
+    setTimeout(() => {
+        dialogBox.setAttribute("class", "dialog-box")
+        words.innerText = "hello there, i am clay"
+    }, 2000)
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*
     startBtn.removeEventListener("click", start);
     nextButton.addEventListener("click", removeChildren);
