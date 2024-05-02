@@ -12,6 +12,10 @@ import
 {
     Mega
 } from "./playMusic.js";
+import
+{
+    clay1
+} from "./cleo.js"
 //exports
 export
 {
@@ -171,7 +175,30 @@ function wall4(){
 
 function start()
 {
-
+    let dialouge = 1
+stopBtn.addEventListener('click', () => {
+    dialouge++
+    switch(dialouge){
+    case 2:
+        words.innerText = "Is this your first time here"
+        break;
+    case 3:
+        words.innerText = "Dont worry i will teach how to defend yourself from anyone"
+        break;
+    case 4:
+        words.innerText = "Well not anyone but most people"
+        break;
+    case 5:
+        clayX = 540
+        clayY = 50
+        clay.style.top = clayY + "px"
+        clay.style.left = clayX + "px"   
+        dialogBox.setAttribute("class", "dialog-boxH")
+        player.style.display = 'none'
+        clay1()
+        break;
+    }
+})
 player.style.left = '100px'
 player.style.top = '290px'
 player1.playerx = 100
@@ -184,6 +211,8 @@ cords.innerText = 'x = ' + player1.playerx + 'y = ' + player1.playery;
         dialogBox.setAttribute("class", "dialog-box")
         words.innerText = "hello there, i am clay"
     }, 2000)
+
+
 
     
 
